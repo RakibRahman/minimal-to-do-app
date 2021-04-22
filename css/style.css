@@ -1,8 +1,21 @@
 *,
 *::after,
 *::before {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+}
+
+#container {
+  margin: 120px auto;
+  width: 600px;
+}
+
+li::marker {
+  color: aqua;
+  font-size: 20px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: red;
 }
 /*# sourceMappingURL=style.css.map */
