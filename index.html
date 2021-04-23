@@ -8,21 +8,22 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <h1>Welcome</h1>
+    <h1>Welcome to <span>ToDo</span> App</h1>
 
     <div id="container">
-      <div id="takeInput">
-        <form>
-          <label for="task"
-            >Task:
-            <input name="task" id="task" type="text" placeholder="add a task" />
-          </label>
-          <input type="submit" id="addItem" value="Add" />
-        </form>
-      </div>
-      <div id="showOutput">
-        <ol id="output"></ol>
-      </div>
+      <form id="takeInput">
+        <label for="task">
+          <input
+            name="task"
+            id="task"
+            type="text"
+            placeholder="Add a task..."
+          />
+        </label>
+        <input type="submit" id="addItem" value="Add" />
+      </form>
+
+      <ul id="output"></ul>
     </div>
     <script src="app.js"></script>
   </body>

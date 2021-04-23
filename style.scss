@@ -1,19 +1,71 @@
 *,
 *::after,
 *::before {
-  //   padding: 0;
-  //   margin: 0;
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
+html {
+  color: whitesmoke;
+  background: linear-gradient(to right, rgb(78, 84, 200), rgb(143, 148, 251));
+  background-repeat: no-repeat;
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  margin-top: 10px;
+}
 #container {
-  margin: 120px auto;
-  width: 600px;
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#takeInput {
+  padding: 10px;
+  background-color: white;
+
+  input[type="text"] {
+    width: 310px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size: 1rem;
+    background: #fff;
+    color: #2f4f4f;
+  }
+  input[type="submit"] {
+    font-size: 1.2rem;
+    color: #482ff7;
+    background-color: #fff;
+    outline: 0;
+    border: none;
+    width: 50px;
+    cursor: pointer;
+  }
+}
+#output {
+  color: springgreen;
+  margin-top: 20px;
+  margin-left: 30px;
+  // background-color: #fff;
+
+  li {
+    padding: 5px 0;
+    border-bottom: 1px solid #fff;
+    font-size: 1.3rem;
+  }
 }
 li::marker {
-  color: aqua;
-  font-size: 20px;
+  content: "📃";
+  font-size: 15px;
 }
 .done {
   text-decoration: line-through;
-  color: red;
+  color: gray;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
 }
